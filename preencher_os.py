@@ -1,20 +1,27 @@
 import os
 from datetime import datetime, timedelta
+from time import strftime, gmtime
 
+os.system('clear')
 # Solicita ao usuário o código e o horário inicial
-codigo = input("Digite o código: ")
-horario_inicial = input("Digite o horário inicial (HH:MM): ")
+codigo = input("Digite o código da posição ou (q) para sair: ")
+if codigo == "q":
+    exit()
+default = 0
+horario_default = "00:00"
+horario_inicial = input("Digite o horário inicial (HH:MM): ").strip() or horario_default
+current_date = strftime("%d/%m/%Y %H%M WeekDay: %A Month: %B", gmtime())
 
-os_pcaa = int(input("Digite a OS do PCAA: "))
+os_pcaa = int(input("Digite a OS do PCAA: ")).strip() or default
 os_pcaa = f"{os_pcaa:,}".replace(",", ".")
 
 # os_gpuu = int(input("Digite a OS do GPUU: "))
 # os_gpuu = f"{os_gpuu:,}".replace(",", ".")
 
-os_rotunda = int(input("Digite a OS da rotunda: "))
+os_rotunda = int(input("Digite a OS da rotunda: ")).strip() or default
 os_rotunda = f"{os_rotunda:,}".replace(",", ".")
 
-os_cabine = int(input("Digite a OS da cabine: "))
+os_cabine = int(input("Digite a OS da cabine: ")).strip() or default
 os_cabine = f"{os_cabine:,}".replace(",", ".")
 
 class Posicao:
@@ -120,6 +127,9 @@ def position_equipments(codigo):
 
     if equipamento:
         # os.system('clear')
+        print("")
+        print(f"Data: {current_date}")
+        print("")
         print(f"{equipamento.posicao} preventiva mensal\n")
         print(f"{equipamento.pcaa} O.S. {os_pcaa}")
         print(f"Início {horario.strftime('%H:%M')} \nTérmino {termino1.strftime('%H:%M')}")
@@ -130,6 +140,9 @@ def position_equipments(codigo):
 
     elif pcamovel:
         # os.system('clear')
+        print("")
+        print(f"Data: {current_date}")
+        print("")
         print(f"{pcamovel.pcaa}{pcamovel.tag} PCA móvel {pcamovel.num} preventiva mensal")
         print("")
         print(f"O.S. {os_pcaa}")
@@ -137,13 +150,15 @@ def position_equipments(codigo):
 
     elif gpumovel:
         # os.system('clear')
+        print("")
+        print(f"Data: {current_date}")
+        print("")
         print(f"{gpumovel.gpuu}{gpumovel.tag} GPU móvel {gpumovel.num} preventiva mensal")
         print("")
         print(f"O.S. {os_gpuu}")
         print(f"Início {horario.strftime('%H:%M')} \nTérmino {termino1.strftime('%H:%M')}")
-
-    else:
-        print("Opção inválida, saindo do programa...")
+    
+    elif "q":
         exit()
 
 # Gera e imprime as 3 mensagens com os horários de início e término
