@@ -1,20 +1,6 @@
-# *LOCAL:* XXX
+from os import system
 
-# *CHAMADO*  XXX
-# *INÍCIO:* XXX
-# *TERMINO:* XXX
-
-# *FATO:* XXX
-
-# *CAUSA:*
-
-# *AÇÃO:*
-
-import time
-import datetime
-import os
-
-os.system('clear')
+system('clear')
 
 def entrar_hora ():
     entrada = input().lower()
