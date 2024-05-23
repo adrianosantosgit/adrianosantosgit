@@ -1,27 +1,72 @@
 import os
 from datetime import datetime, timedelta
 from time import strftime, gmtime
+import time
+
+# Obtendo o tempo atual em segundos desde a época
+segundos_desde_epoca = time.time()
+
+# Adicionando o deslocamento de fuso horário (UTC-03:00)
+deslocamento_fuso_horario = -3 * 3600  # 3 horas em segundos
+tempo_local = segundos_desde_epoca + deslocamento_fuso_horario
+
+# Convertendo para um objeto time.struct_time
+objeto_tempo = time.gmtime(tempo_local)
+
+# Formatando a data e hora
+data_hora_formatada = time.strftime("%Y-%m-%d %H:%M:%S", objeto_tempo)
+
+def entrar_hora ():
+    entrada = input().lower()
+
+    if codigo == "s":
+        print("Saindo do programa...")
+        exit()
+    # Verifique se a entrada tem 3 ou 4 dígitos
+    elif len(entrada) not in (3, 4):
+        print("Entrada inválida. Digite 3 ou 4 dígitos.")
+    else:
+        # Obtenha a hora e os minutos
+        if len(entrada) == 3:
+            hora = int(entrada[:1])
+            minutos = int(entrada[1:])
+        else:
+            hora = int(entrada[:2])
+            minutos = int(entrada[2:])
+
+        # Verifique os limites
+        if hora > 23 or minutos > 59:
+            print("Hora ou minutos fora dos limites.")
+            print(f"Substituido por: XXX")
+            return "XXX"
+            
+        else:
+            # Exiba a hora e os minutos com separador
+            return f"{hora:02d}:{minutos:02d}"
 
 os.system('clear')
-# Solicita ao usuário o código e o horário inicial
-codigo = input("Digite o código da posição ou (q) para sair: ")
-if codigo == "q":
-    exit()
-default = 0
-horario_default = "00:00"
-horario_inicial = input("Digite o horário inicial (HH:MM): ").strip() or horario_default
-current_date = strftime("%d/%m/%Y %H%M WeekDay: %A Month: %B", gmtime())
 
-os_pcaa = int(input("Digite a OS do PCAA: ")).strip() or default
+# Solicita ao usuário o código e o horário inicial
+codigo = input("Digite o código da posição ou (s) para sair: ")
+if codigo == "s":
+    exit()
+default = int("000000")
+horario_default = "00:00"
+
+print("Digite o horário do inicio, hora e os minutos (sem separador : ) ou (s) para sair: ")
+horario_inicial = entrar_hora()
+current_date = strftime("%d/%m/%Y %H%M WeekDay: %A Month: %B", gmtime(-10800))
+
+os_pcaa = int(input("Digite a OS do PCAA: "))
 os_pcaa = f"{os_pcaa:,}".replace(",", ".")
 
 # os_gpuu = int(input("Digite a OS do GPUU: "))
 # os_gpuu = f"{os_gpuu:,}".replace(",", ".")
 
-os_rotunda = int(input("Digite a OS da rotunda: ")).strip() or default
+os_rotunda = int(input("Digite a OS da rotunda: "))
 os_rotunda = f"{os_rotunda:,}".replace(",", ".")
 
-os_cabine = int(input("Digite a OS da cabine: ")).strip() or default
+os_cabine = int(input("Digite a OS da cabine: "))
 os_cabine = f"{os_cabine:,}".replace(",", ".")
 
 class Posicao:
@@ -128,7 +173,8 @@ def position_equipments(codigo):
     if equipamento:
         # os.system('clear')
         print("")
-        print(f"Data: {current_date}")
+        #print(f"Data: {current_date}")
+        print(f"Data e hora local (UTC-03:00): {data_hora_formatada}")
         print("")
         print(f"{equipamento.posicao} preventiva mensal\n")
         print(f"{equipamento.pcaa} O.S. {os_pcaa}")
@@ -141,7 +187,8 @@ def position_equipments(codigo):
     elif pcamovel:
         # os.system('clear')
         print("")
-        print(f"Data: {current_date}")
+        # print(f"Data: {current_date}")
+        print(f"Data e hora local (UTC-03:00): {data_hora_formatada}")
         print("")
         print(f"{pcamovel.pcaa}{pcamovel.tag} PCA móvel {pcamovel.num} preventiva mensal")
         print("")
@@ -151,7 +198,8 @@ def position_equipments(codigo):
     elif gpumovel:
         # os.system('clear')
         print("")
-        print(f"Data: {current_date}")
+        # print(f"Data: {current_date}")
+        print(f"Data e hora local (UTC-03:00): {data_hora_formatada}")
         print("")
         print(f"{gpumovel.gpuu}{gpumovel.tag} GPU móvel {gpumovel.num} preventiva mensal")
         print("")
