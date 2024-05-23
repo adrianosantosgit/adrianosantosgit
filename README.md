@@ -1,6 +1,6 @@
-## Olá! 👋 
+<h2 style="text-align: center;"> Olá! 👋 </h2>
 
-- 🌱 Eu estou atualmente aprendendo:
+<p style="text-align: center;">🌱 Eu estou atualmente aprendendo:</p>
 
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 
@@ -8,7 +8,7 @@
 
 Apaixonado pelas tecnologias de desenvolvimento de software desde os 13 anos de idade, influenciado pelos jogos em lan-houses levado pra área de mecatrônica pela vida, há 5 anos estou me atualizando com as tecnologias mais usadas por Devs do momento e praticando ao máximo possível com exercícios e projetos práticos.
 
-## Habilidades  
+<h2 style="text-align: center;"> Habilidades / Skills </h2>
   
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![JavaScript](https://img.shields.io/badge/JavaScript-000?style=for-the-badge&logo=javascript)
@@ -23,11 +23,13 @@ Apaixonado pelas tecnologias de desenvolvimento de software desde os 13 anos de 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/adrianosantosgit)
 ![Markdown](https://img.shields.io/badge/Markdown-000?style=for-the-badge&logo=markdown)
 
-## Conecte-se comigo
+<h2 style="text-align: center;"> Conecte-se comigo </h2>
+
 [![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=0E76A8)](https://github.com/adrianosantosgit)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-000?style=for-the-badge&logo=linkedin&logoColor=0E76A8)](https://www.linkedin.com/in/adrianosantosbr/)
 
-### GitHub Stats
+<h2 style="text-align: center;"> GitHub Stats </h2>
+
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=adrianosantosgit&theme=transparent&bg_color=000&border_color=30A3DC&show_icons=true&icon_color=30A3DC&title_color=E94D5F&text_color=FFF)
 ![Top Langs](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=adrianosantosgit&layout=compact&bg_color=000&border_color=30A3DC&title_color=E94D5F&text_color=FFF)
 
