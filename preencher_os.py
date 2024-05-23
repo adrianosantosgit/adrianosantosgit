@@ -203,7 +203,7 @@ def position_equipments(codigo):
         print("")
         print(f"{gpumovel.gpuu}{gpumovel.tag} GPU móvel {gpumovel.num} preventiva mensal")
         print("")
-        print(f"O.S. {os_gpuu}")
+        # print(f"O.S. {os_gpuu}")
         print(f"Início {horario.strftime('%H:%M')} \nTérmino {termino1.strftime('%H:%M')}")
     
     elif "q":
