@@ -1,15 +1,15 @@
-### Olá! 👋 
+## Olá! 👋 
 
 - 🌱 Eu estou atualmente aprendendo:
 
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=87CEFA&size=35&center=true&vCenter=true&width=1000&lines=Adriano+Santos;Desenvolvedor+de+Software;Bem+vindo+ao+meu+perfil+do+GitHub+:%29)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=87CEFA&size=35&center=true&vCenter=true&width=1000&lines=Adriano+Santos;Software+Developer;Desenvolvedor+de+Software;Welcome+to+my+Github+profile++:%29;Bem+vindo+ao+meu+perfil+do+GitHub+:%29)](https://git.io/typing-svg)
 
 Apaixonado pelas tecnologias de desenvolvimento de software desde os 13 anos de idade, influenciado pelos jogos em lan-houses levado pra área de mecatrônica pela vida, há 5 anos estou me atualizando com as tecnologias mais usadas por Devs do momento e praticando ao máximo possível com exercícios e projetos práticos.
 
-## Habilidades
-
+## Habilidades  
+  
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![JavaScript](https://img.shields.io/badge/JavaScript-000?style=for-the-badge&logo=javascript)
 
