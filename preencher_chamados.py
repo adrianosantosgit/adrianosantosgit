@@ -46,6 +46,22 @@ def entrar_hora ():
 
                 break  # Sai do loop quando a entrada é válida
 
+def replace_words_with_uppercase(input_string, words_to_replace):
+    """
+    Replaces specific words in the input string with their uppercase equivalents.
+    Args:
+        input_string (str): The original string.
+        words_to_replace (dict): A dictionary where keys are lowercase words and values are their uppercase equivalents.
+
+    Returns:
+        str: The modified string with uppercase words.
+    """
+    for word, replacement in words_to_replace.items():
+        input_string = input_string.replace(word, replacement)
+    return input_string
+
+words_to_replace = {"poem": "POEM", "pca": "PCA", "gpu":"GPU", "lcd":"LCD", "j3":"J3", "c1":"C1", "c2":"C2", "ihm":"IHM"}
+
 # Solicita ao usuário o código e o horário inicial
 codigo = input("Digite o código da posição ou (s) para sair: ").lower()
 if codigo == "s":
@@ -64,17 +80,22 @@ horario_termino = entrar_hora()
 fato = input("Descreva o fato: ").capitalize()
 causa = input("Descreva a causa: ").capitalize()
 acao = input("Descreva a ação: ").capitalize()
+obs = input("Descreva a observação caso necessário: ").capitalize()
 
 print("\n")
-
 print(f"*LOCAL:*", codigo.upper(),"\n\n*CHAMADO*", horario_chamado, "\n*INÍCIO:*", horario_inicio, "\n*TERMINO:*", horario_termino, "\n")
 
+fato = replace_words_with_uppercase(fato, words_to_replace)
 print("*FATO:* ",fato + ".\n")
 
+causa = replace_words_with_uppercase(causa, words_to_replace)
 print("*CAUSA:* ",causa + ".\n")
 
-print("*AÇÃO:* ",acao + ".")
+acao = replace_words_with_uppercase(acao, words_to_replace)
+print("*AÇÃO:* ",acao + ".\n")
 
+obs = replace_words_with_uppercase(obs, words_to_replace)
+print("*OBS:* ",obs + ".")
 
 # equipamentos = {
 #         "a02": "A02", "a04": A04, "a06": A06, "a08": A08,
