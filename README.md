@@ -12,6 +12,7 @@ Apaixonado pelas tecnologias de desenvolvimento de software, influenciado pelos 
   
 ![Python](https://img.shields.io/badge/python-000?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![JavaScript](https://img.shields.io/badge/JavaScript-000?style=for-the-badge&logo=javascript)
+![SQL](https://img.shields.io/badge/SQL-000?style=for-the-badge&logo=MySQL)
 
 ![Linux](https://img.shields.io/badge/Linux-000?style=for-the-badge&logo=linux&logoColor=FCC624)
 ![macOS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0)
