@@ -31,8 +31,8 @@ Apaixonado pelas tecnologias de desenvolvimento de software, influenciado pelos 
 
 <h2 style="text-align: center;"> GitHub Stats </h2>
 
-![Top Langs](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=adrianosantosgit&layout=compact&bg_color=000&border_color=30A3DC&title_color=E94D5F&text_color=FFF)
-![GitHub Stats]
+[Top Langs]
+[GitHub Stats]
 
 <!--
 **adrianosantosgit/adrianosantosgit** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
