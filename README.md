@@ -1,9 +1,5 @@
 <h2 style="text-align: center;"> Olá! 👋 </h2>
 
-<p style="text-align: center;">🌱 Eu estou atualmente aprendendo:</p>
-
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
-
 [![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=87CEFA&size=35&center=true&vCenter=true&width=1000&lines=Adriano+Santos;Software+Developer;Desenvolvedor+de+Software;Welcome+to+my+Github+profile++:%29;Bem+vindo+ao+meu+perfil+do+GitHub+:%29)](https://git.io/typing-svg)
 
 Apaixonado pelas tecnologias de desenvolvimento de software, influenciado pelos jogos em lan-houses da infância e adolescência, levado pra área de mecatrônica pela vida, desde 2019 estou me atualizando com as stacks mais usadas por Software Developers e praticando com exercícios e projetos práticos.
